@@ -40,6 +40,30 @@ p {
   line-height: 28px;
 }
 
+.navbar {
+  background-color: #edadbf;
+}
+
+.nav-item {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.nav-link {
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-style);
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--primary-color);
+}
+
+.logo {
+  display: block;
+  max-width: 15%;
+}
+
 .hero {
   padding: 90px 20px;
 }
@@ -92,5 +116,12 @@ p {
 
   .d-sm-block {
     display: block;
+  }
+}
+
+@media (max-width: 576px) {
+  .logo,
+  .navbar-toggler-icon {
+    margin: 0 auto;
   }
 }
