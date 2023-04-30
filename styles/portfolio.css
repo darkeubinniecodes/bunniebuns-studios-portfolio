@@ -1,16 +1,96 @@
+:root {
+  --primary-color: #d25d8c;
+  --secondary-color: #f8f8f7;
+  --primary-font-style: "Nothing You Could Do", cursive;
+  --secondary-font-style: "Fuzzy Bubbles", cursive;
+}
 body {
   background-color: #edadbf;
+  text-align: center;
 }
 
 h1 {
-  color: #d25d8c;
+  color: var(--primary-color);
   font-size: 96px;
-  font-family: "Nothing You Could Do", cursive;
+  font-family: var(--primary-font-style);
+  line-height: 128px;
+}
+
+h2,
+h3 {
+  font-family: var(--secondary-font-style);
+  font-weight: bold;
+  line-height: 38px;
 }
 
 h2 {
-  color: #d25d8c;
+  color: var(--primary-color);
   font-size: 24px;
-  font-family: "Fuzzy Bubbles", cursive;
+}
+
+h3 {
+  color: var(--secondary-color);
+  font-size: 24px;
+}
+
+p {
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-family: var(--secondary-font-style);
+  line-height: 28px;
+}
+
+.hero {
+  padding: 90px 20px;
+}
+
+.hero img {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.btn {
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 27px;
+  font-family: var(--secondary-font-style);
   font-weight: bold;
+  text-transform: uppercase;
+}
+
+.btn-primary {
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 10px 50px;
+  border: 2px solid var(--secondary-color);
+}
+
+.btn-primary:hover {
+  color: var(--primary-color);
+  background-color: #edadbf;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-secondary {
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+  padding: 10px 26px;
+  border: 2px solid var(--primary-color);
+}
+
+.btn-secondary:hover {
+  color: var(--secondary-color);
+  background-color: #edadbf;
+  border: 2px solid var(--secondary-color);
+}
+
+@media (min-width: 576px) {
+  .col-sm-6 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+
+  .d-sm-block {
+    display: block;
+  }
 }
