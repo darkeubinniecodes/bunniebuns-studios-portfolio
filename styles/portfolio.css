@@ -55,6 +55,10 @@ p {
   font-weight: bold;
 }
 
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
 .navbar-nav .nav-link.active {
   color: var(--primary-color);
 }
@@ -68,8 +72,13 @@ p {
   padding: 90px 20px;
 }
 
-.hero img {
-  max-width: 70%;
+.index-img {
+  max-width: 58%;
+  margin: 0 auto;
+}
+
+.about-img {
+  max-width: 65%;
   margin: 0 auto;
 }
 
